@@ -15,5 +15,5 @@ func main() {
 	fmt.Println("\n****** All favorite packages ******\n")
 	fav.PrintFavorites()
 	count := len(fav.GetAll())
-	fmt.Printf("Total packages in the favorite list:%d", count)
+	fmt.Printf("-----Total packages in the favorite list:%d-----", count)
 }

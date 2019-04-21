@@ -23,4 +23,10 @@ func main() {
 	fmt.Println("First Name:", fname, ",Last Name:", lname, ",Age:", age)
 	// Print package variable
 	fmt.Println("Country:", Country)
+
+	Country := "China"
+	fmt.Println("Country:", Country)
+
+	Title := "My Details"
+	fmt.Println(Title)
 }

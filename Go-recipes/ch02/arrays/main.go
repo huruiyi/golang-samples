@@ -7,6 +7,8 @@ import (
 func main() {
 	// Declare arrays
 	var x [5]int
+	fmt.Println("Value of x:", x)
+
 	// Assign values at specific index
 	x[0] = 5
 	x[4] = 25

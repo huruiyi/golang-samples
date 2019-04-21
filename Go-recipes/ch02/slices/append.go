@@ -6,6 +6,7 @@ import (
 
 func main() {
 	x := make([]int, 2, 5)
+	fmt.Println(x)
 	x[0] = 10
 	x[1] = 20
 	fmt.Println("Slice x:", x)
