@@ -1,6 +1,7 @@
 package main
 
-import (
+import
+(
 	"fmt"
 	"github.com/gorilla/mux"
 	//"log"
@@ -9,13 +10,14 @@ import (
 
 func TestInterface(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(r)
-	fmt.Fprintln(w, "hi")
+	fmt.Fprintln(w,"hi")
 }
 
-func main() {
 
+func main() {
+	
 	Routes := mux.NewRouter()
 	Routes.HandleFunc("/test", TestInterface).Methods("GET")
-	http.ListenAndServe(":9000", Routes)
+	http.ListenAndServe(":9000",Routes)
 
 }

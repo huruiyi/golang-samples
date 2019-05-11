@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/github.com/nkozyra/api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/github.com/nkozyra/hyphen" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/hyphen" vcs="Git" />
   </component>

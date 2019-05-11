@@ -2,10 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52539bd4-378e-4502-91e0-cc2fb6e3d6a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/lib/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/16_datatype.go" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/16_datatype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/1304OS_ch8_cors.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/1304OS_ch8_statuses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/1304OS_ch8_users.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/ch8_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/consumer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/js/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/templates/socialnetwork.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/views/auth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/views/statuses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/consumer/views/users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter1/ch1_1_hello.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter1/ch1_1_hello.routes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter1/ch1_1_mysqladd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter1/lib/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/ch10_api.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/ch10_api.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/diskcache-demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/diskcache-demo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/memorycache-demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/memorycache-demo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/middleware-chaining.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/middleware-chaining.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/ratelimit-demo.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter10/ratelimit-demo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter11/basic-auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter11/basic-auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter11/loggers.go" beforeDir="false" afterPath="$PROJECT_DIR$/Mastering Web Services in Go/chapter11/loggers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_1_soap.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_2_json.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_3_xml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_4_yaml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_5_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/lib/model.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_1_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_2a_servemux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_custom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_mux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_4_custom.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_5_jsonrpc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch_3_2_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface-update.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface_server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_2_websocket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_3_versions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/api/api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/v1/v1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/v2/v2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/websocket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/authorize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_3_format.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_4_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_5_httpsredir.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_6_salt.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter5/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/1304OS_ch6_createuser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/1304OS_ch6_oauthcode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/1304OS_ch6_oauthcode2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/1304OS_ch6_status.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/authorize.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/cert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_badcert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_badoverride.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/key.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/api/api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/password/password.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/pseudoauth/pseudoauth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/services/services.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/specification/api_specification.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/v1/v1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/api/v2/v2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/fmttest/fmttest.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/nathankozyra.com/httpex/httpex.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/oauth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter6/oauth_multi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/1304OS_ch7_proxynginx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/1304OS_ch7_proxyrev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/ch7_mgo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/ch7_redis.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/connect.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/api/api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/cache/cache.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/interface.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/password/password.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/pseudoauth/pseudoauth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/services/services.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/sessions/sessions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/sessionsmongo/sessionsmongo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/specification/api_specification.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/v1/v1.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/api/v2/v2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter7/github.com/nkozyra/hyphen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter9/aws-list.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter9/ch9_api.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter9/email-socket.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mastering Web Services in Go/chapter9/restart.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,81 +114,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_5_api.go">
+        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/ch7_mgo.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/ch7_redis.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#14#145#0" expanded="true" />
+                <element signature="e#14#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_1_api.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_2a_servemux.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_custom.go">
+        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/connect.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
-                <element signature="e#14#70#0" expanded="true" />
+                <element signature="e#15#75#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_4_custom.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="e#14#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_5_jsonrpc.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_2_websocket.go">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_3_format.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_5_httpsredir.go">
+        <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter06/ch6_api.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-227" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#14#78#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -107,6 +171,7 @@
     <findStrings>
       <find>flag</find>
       <find>Email</find>
+      <find>NewServeMux</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="D:\Software\Go" />
@@ -136,6 +201,10 @@
         <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_3_json.go" />
         <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_4_yaml.go" />
         <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_5_api.go" />
+        <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_custom.go" />
+        <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_mux.go" />
+        <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_4_custom.go" />
+        <option value="$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_2_websocket.go" />
       </list>
     </option>
   </component>
@@ -168,76 +237,7 @@
               <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
               <item name="Golang" type="462c0819:PsiDirectoryNode" />
               <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter1" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter2" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Mastering Web Services in Go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Web-dev-w-go" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Web-dev-w-go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Web-dev-w-go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter-1" type="462c0819:PsiDirectoryNode" />
-              <item name="calc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Golang" type="462c0819:PsiDirectoryNode" />
-              <item name="Web-dev-w-go" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter-1" type="462c0819:PsiDirectoryNode" />
-              <item name="calcdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter07" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Golang" type="b2602c69:ProjectViewProjectNode" />
@@ -282,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build ch2_3_json.go">
+  <component name="RunManager" selected="Go Build.go build ch3_3_mux.go">
     <configuration name="go build ch2_2_json.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -299,11 +299,19 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build gen_contributors.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build ch3_3_custom.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Golang" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Basic/temp/gen_contributors.go" />
+      <filePath value="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_custom.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build ch3_3_mux.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Golang" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_mux.go" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -315,41 +323,33 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build gen_contributors.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="Golang" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/Basic/contributors/gen_contributors.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build ch3_3_mux.go" />
+        <item itemvalue="Go Build.go build ch3_3_custom.go" />
         <item itemvalue="Go Build.go build ch2_3_json.go" />
         <item itemvalue="Go Build.go build ch2_2_json.go" />
         <item itemvalue="Go Build.go build gen_contributors.go (2)" />
-        <item itemvalue="Go Build.go build gen_contributors.go (1)" />
-        <item itemvalue="Go Build.go build gen_contributors.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939914" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32939914" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32939914" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32832617" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -361,89 +361,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/functions/variadic.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/maps/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/maps/sort_map.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/slices/append.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/slices/append_nilslice.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/Code/day006-面向对象/04多态.go" />
-    <entry file="file://$PROJECT_DIR$/Go-recipes/ch02/slices/copy.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day006-面向对象/02继承性.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day006-面向对象/01封装性.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day007-文件读写/demos/01面向对象练习.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day007-文件读写/demos/02文件读写.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day007-文件读写/demos/03文件拷贝.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day007-文件读写/demos/04字符统计.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day008-JSON读写与异常处理/异常处理/01恐慌与处理.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day010-网络编程/cz/01-TCP-CS-server.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day010-网络编程/network/HTTP/1.http.get.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/002/day010-网络编程/network/HTTP/3.GoSever.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Basic/contributors/my.json" />
-    <entry file="file://$PROJECT_DIR$/Basic/contributors/gen_contributors.go" />
-    <entry file="file://$PROJECT_DIR$/Basic/my.json" />
-    <entry file="file://$PROJECT_DIR$/Basic/gen_contributors.go" />
     <entry file="file://$PROJECT_DIR$/Basic/002/day010-网络编程/network/mutil-TCP/Client.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -581,61 +498,255 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter2/ch2_5_api.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="935">
           <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#145#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_1_api.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_2a_servemux.go">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_custom.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#14#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_2a_servemux.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="22" selection-start-line="18" selection-end-line="19" />
+          <folding>
+            <element signature="e#14#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_3_mux.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#14#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_4_custom.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="e#14#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch3_5_jsonrpc.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176" />
+        <state relative-caret-position="301">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <element signature="e#190#303#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/ch_3_2_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1838">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#180#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_2_websocket.go">
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface-update.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter3/interface_server.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_2_websocket.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#14#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/4_3_versions.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/api/api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#13#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/v1/v1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#12#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter4/v2/v2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_3_format.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_4_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_5_httpsredir.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter5/ch5_6_salt.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227" />
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_badoverride.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_badcert.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter6/ch6_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#14#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter7/ch7_redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#14#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter7/connect.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#14#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter8/ch8_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/chapter7/ch7_mgo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#14#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/ch7_mgo.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/ch7_redis.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#14#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter07/connect.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#15#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Mastering Web Services in Go/Chapter06/ch6_api.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#14#78#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
