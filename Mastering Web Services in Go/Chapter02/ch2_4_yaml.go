@@ -1,10 +1,9 @@
 package main
 
-import
-(
+import (
 	"fmt"
+	"gopkg.in/yaml.v2"
 	"net/http"
-	"launchpad.net/goyaml"
 )
 
 type User struct {
@@ -19,7 +18,7 @@ func userRouter(w http.ResponseWriter, r *http.Request) {
 	ourUser.Email = "bill.smith@example.com"
 	ourUser.ID = 100
 
-	output,_ := goyaml.Marshal(&ourUser)
+	output,_ := yaml.Marshal(&ourUser)
 	fmt.Fprintln(w, string(output))
 }
 
@@ -27,6 +26,6 @@ func main() {
 	
 	fmt.Println("Starting YAML server")
 	http.HandleFunc("/user", userRouter)
-	http.ListenAndServe(":8080",nil)
+	http.ListenAndServe(":8090",nil)
 
 }

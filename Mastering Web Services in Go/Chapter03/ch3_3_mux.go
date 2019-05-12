@@ -6,7 +6,6 @@ import
 )
 
 func main() {
-	
 	router := http.NewServeMux()
-
+	println(router)
 }

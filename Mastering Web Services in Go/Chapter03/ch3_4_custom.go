@@ -7,8 +7,6 @@ import
 )
 
 func main() {
-	
 	x := httpex.Server{}
-
 	fmt.Println(x)
 }
