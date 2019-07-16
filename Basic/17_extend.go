@@ -19,12 +19,7 @@ type Student struct {
 
 func main() {
 	// 初始化学生Jane
-	jane := Student{
-		Human: Human{
-			"Jane",
-			35,
-			100},
-		speciality: "Biology"}
+	jane := Student{Human: Human{"Jane", 35, 100}, speciality: "Biology"}
 	// 现在我们来访问相应的字段
 	fmt.Println("Her name is ", jane.name)
 	fmt.Println("Her age is ", jane.age)

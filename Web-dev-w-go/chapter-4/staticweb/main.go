@@ -8,5 +8,5 @@ func main() {
 	mux := http.NewServeMux()
 	fs := http.FileServer(http.Dir("public"))
 	mux.Handle("/", fs)
-	http.ListenAndServe(":8080", mux)
+	http.ListenAndServe(":8090", mux)
 }

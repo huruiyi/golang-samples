@@ -120,6 +120,5 @@ func Demo3() {
 }
 
 func main() {
-
 	ErrorDemo();
 }

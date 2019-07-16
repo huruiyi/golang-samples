@@ -9,7 +9,7 @@ const (
 	data_a int    = 1
 	data_b string = "td"
 	data_c string = "33" //类型可选填
-	flag_d   bool   = false
+	flag_d bool   = false
 )
 
 func testConst() {
