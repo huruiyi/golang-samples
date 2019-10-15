@@ -6,7 +6,6 @@ import (
 )
 
 func main1() {
-
 	cmd := exec.Command("calc")
 	buf, err := cmd.Output() //获取输出
 	fmt.Printf("output:%s\n", buf)

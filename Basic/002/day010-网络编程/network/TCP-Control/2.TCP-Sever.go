@@ -39,21 +39,25 @@ func main() {
 			return           //处理错误
 		}
 		for {
-			fmt.Println("TCP服务器开始处理请求")
 			buffer := make([]byte, 1024)
-			connect.Read(buffer) //收到消息
-			fmt.Println(string(buffer))
+			n, err := connect.Read(buffer) //收到消息
+			if err == nil {
 
-			cmd := exec.Command(string(buffer))
-			buf, err := cmd.Output() //获取输出
-			if err != nil {
-				fmt.Println(err)
+				fmt.Println("TCP服务器开始处理请求")
+				fmt.Println(string(buffer[:n]))
+
+				cmd := exec.Command(string(buffer[:n]))
+				buf, err := cmd.Output() //获取输出
+				if err != nil {
+					fmt.Println(err)
+				}
+				fmt.Printf("output:%s\n", buf)
+				fmt.Printf("error:%s\n", err)
+
+				connect.Write([]byte (buf))
+				fmt.Println("TCP服务器处理完请求")
 			}
-			fmt.Printf("output:%s\n", buf)
-			fmt.Printf("error:%s\n", err)
 
-			connect.Write([]byte (buf))
-			fmt.Println("TCP服务器处理完请求")
 		}
 
 	}

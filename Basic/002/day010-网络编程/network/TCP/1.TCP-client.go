@@ -11,16 +11,22 @@ func main() {
 	//服务器 127.0.0.1
 	connect, err := net.Dial("tcp", "127.0.0.1:12345")
 	if err != nil {
-		fmt.Println(err) //打印错误
+		fmt.Println(err)
 		return
 	}
-	fmt.Println("client  is  connecting server") //链接服务器成功
-	defer connect.Close()                        //关闭网络链接
+	fmt.Println("client  is  connecting server")
+	defer connect.Close()
 
 	//发送消息
-	connect.Write([]byte("锄禾日当午，学习go语言真他妈苦"))
+	connect.Write([]byte("中国-China"))
 	//接收消息
-	buffer := make([]byte, 1024) //分配内存空间
-	connect.Read(buffer)         //读取内容并写入内存空间
-	fmt.Println(string(buffer))  //显示读取内容
+	buffer := make([]byte, 100) //分配内存空间
+
+	n, err := connect.Read(buffer) //读取内容并写入内存空间
+	if err == nil {
+		fmt.Println("----------------------------读取的信息(来自服务端的消息)----------------------------")
+		fmt.Println("[", string(buffer), "]")
+		fmt.Println("[", string(buffer[:n]), "]")
+		fmt.Println("----------------------------读取的信息----------------------------")
+	}
 }

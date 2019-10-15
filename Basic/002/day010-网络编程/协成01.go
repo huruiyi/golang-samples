@@ -26,4 +26,5 @@ func test02() {
 }
 func main() {
 	test02()
+	time.Sleep(10 * time.Second)
 }

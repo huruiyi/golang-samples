@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	c := make(chan bool, 1)
+	c := make(chan bool, 0)
 	go func() {
 		select {
 		case m := <-c:
@@ -20,4 +20,5 @@ func main() {
 }
 
 func handle(m bool) {
+	fmt.Println(m)
 }

@@ -21,7 +21,7 @@ func main() {
 		//var  cmd string
 		//fmt.Scanf("%s",&cmd)  //输入一个命令
 		//发送消息
-		cmd := "calc"
+		cmd := "tasklist"
 		connect.Write([]byte(cmd)) //命令传输给服务器
 		//接收消息
 		buffer := make([]byte, 1024) //分配内存空间
