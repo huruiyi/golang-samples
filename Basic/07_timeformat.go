@@ -13,5 +13,10 @@ func main() {
 	fmt.Println(time.Now().Format("15:04:05"))
 
 	// Timestamp
-	fmt.Println(time.Now().Unix()) // Ex: 1257894000
+	timestamp := time.Now().Unix()
+	fmt.Println(timestamp) // Ex: 1257894000
+
+	tm := time.Unix(1573020865, 0)
+	fmt.Println(tm)
+
 }
