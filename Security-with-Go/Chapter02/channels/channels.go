@@ -5,23 +5,20 @@ import (
 	"time"
 )
 
-// Do some processing that takes a long time
-// in a separate thread and signal when done
+// Do some processing that takes a long time in a separate thread and signal when done
 func process(doneChannel chan bool) {
 	time.Sleep(time.Second * 3)
 	doneChannel <- true
 }
 
 func main() {
-	// Each channel can support one data type.
-	// Can also use custom types
+	// Each channel can support one data type.  Can also use custom types
 	var doneChannel chan bool
 
 	// Channels are nil until initialized with make
 	doneChannel = make(chan bool)
 
-	// Kick off a lengthy process that will
-	// signal when complete
+	// Kick off a lengthy process that will signal when complete
 	go process(doneChannel)
 
 	// Get the first bool available in the channel
@@ -32,8 +29,7 @@ func main() {
 	// or to simply ignore the value but still wait
 	// <-doneChannel
 
-	// Start another process thread to run in background
-	// and signal when done
+	// Start another process thread to run in background and signal when done
 	go process(doneChannel)
 
 	// Make channel non-blocking with select statement
