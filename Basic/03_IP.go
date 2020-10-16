@@ -24,4 +24,11 @@ func main() {
 		fmt.Println("The address is ", addr.String())
 	}
 	os.Exit(0)
+
+	const userName, age = "Kim", 22
+	n, err := fmt.Fprintf(os.Stdout, "%s is %d years old.\n", userName, age)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Fprintf: %v\n", err)
+	}
+	fmt.Printf("%d bytes written.\n", n)
 }

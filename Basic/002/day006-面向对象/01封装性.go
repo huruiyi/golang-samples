@@ -31,13 +31,13 @@ func (p *Person) SelfIntroduce() {
 
 //值传递传递的是对象的副本
 func MakeHimLove(p Person) {
-	fmt.Printf("p的地址是%p\n",&p)
+	fmt.Printf("p的地址是%p\n", &p)
 	p.Love()
 }
 
 //引用传递传递的是对象的真身
 func MakeHisPtrLove(p *Person) {
-	fmt.Printf("p的地址是%p\n",p)
+	fmt.Printf("p的地址是%p\n", p)
 	p.Love()
 }
 
@@ -54,7 +54,7 @@ func main011() {
 
 	//通过指针访问属性和方法
 	rangge := &Person{}
-	fmt.Printf("%T\n",rangge)
+	fmt.Printf("%T\n", rangge)
 	rangge.name = "西门阿让"
 	rangge.Eat()
 	rangge.Drink()
@@ -81,7 +81,7 @@ func main012() {
 
 func main() {
 	rangge := Person{"西门阿让", 8, true, []string{"撸代码", "完美的撸代码"}}
-	fmt.Printf("让哥的真身地址是%p\n",&rangge)//
+	fmt.Printf("让哥的真身地址是%p\n", &rangge) //
 
 	//要求传递值就必须传递值
 	//MakeHimLove(rangge)
@@ -94,5 +94,5 @@ func main() {
 	//	//MakeHimLove(rangge)
 	//	MakeHisPtrLove(&rangge)
 	//}
-	fmt.Printf("暴风雨过后让哥的年龄是%d\n",rangge.age)
+	fmt.Printf("暴风雨过后让哥的年龄是%d\n", rangge.age)
 }
