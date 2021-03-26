@@ -9,7 +9,7 @@ import (
 
 /*
 读取目录下的文件
- */
+*/
 func ReadDirFiles() {
 	file, _ := os.Open(`D:\Software\baidu\兄弟连Go基础\Code\day010`)
 	names, e := file.Readdirnames(0)
@@ -59,9 +59,8 @@ func main() {
 	s3 := a[3:]
 	fmt.Println(s3)
 
-
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Text to send: ")
 	text, _ := reader.ReadString('\n')
-	fmt.Println(  text + "\n")
+	fmt.Println(text + "\n")
 }

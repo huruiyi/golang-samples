@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"github.com/google/gopacket/pcap"
+	"log"
 )
 
 func main() {

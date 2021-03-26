@@ -30,14 +30,14 @@ func demo2() {
 	fmt.Println(len(s3), cap(s3), string(s3))
 }
 
-func demo3()  {
+func demo3() {
 	var favorites []string
 	favorites = make([]string, 3)
 	favorites[0] = "github.com/gorilla/mux"
 	favorites[1] = "github.com/codegangsta/negroni"
 	favorites[2] = "gopkg.in/mgo.v2"
 	for e := range favorites {
-		fmt.Println(e,favorites[e])
+		fmt.Println(e, favorites[e])
 	}
 
 }
@@ -62,8 +62,8 @@ func main() {
 	note2.Description = "卧底牢狱 闯牢打虎"
 	note2.CreatedOn = time.Now()
 
-	notes["film1"] = note1;
-	notes["film2"] = note2;
+	notes["film1"] = note1
+	notes["film2"] = note2
 
 	fmt.Println(notes)
 

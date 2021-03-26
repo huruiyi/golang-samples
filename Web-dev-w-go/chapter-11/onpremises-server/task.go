@@ -14,7 +14,7 @@ type Task struct {
 func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/task", task)
-	http.ListenAndServe(":8080",nil)
+	http.ListenAndServe(":8080", nil)
 }
 
 const taskForm = `

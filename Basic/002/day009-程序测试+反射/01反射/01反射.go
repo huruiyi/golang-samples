@@ -29,7 +29,7 @@ func (p *People) SetName(name string) {
 
 //func(string,int)int
 func (p *People) Eat(food string, grams int) (power int) {
-	fmt.Println(p.Name,"Eat called:", food, grams)
+	fmt.Println(p.Name, "Eat called:", food, grams)
 	return 5 * grams
 }
 
@@ -46,10 +46,10 @@ func main() {
 func valueAPI(o People) {
 
 	oValue := reflect.ValueOf(o)
-	fmt.Println(oValue)//{{100} 张三 20}
+	fmt.Println(oValue) //{{100} 张三 20}
 
 	fmt.Println("查看oValue的原始类型")
-	fmt.Println(oValue.Kind())//struct
+	fmt.Println(oValue.Kind()) //struct
 
 	fmt.Println("查看p的所有属性的值")
 	for i := 0; i < oValue.NumField(); i++ {
@@ -59,7 +59,7 @@ func valueAPI(o People) {
 
 	fmt.Println("获得父类的属性值")
 	fatherFieldValue := oValue.FieldByIndex([]int{0, 0})
-	fmt.Println(fatherFieldValue.Interface())//100
+	fmt.Println(fatherFieldValue.Interface()) //100
 
 	fmt.Println("获得指针value的内容进而获得成员的值")
 	opValue := reflect.ValueOf(&o)
@@ -69,7 +69,7 @@ func valueAPI(o People) {
 
 	fmt.Println("修改对象的属性")
 	oValue.FieldByName("Age").SetInt(60)
-	fmt.Println(oValue)//60
+	fmt.Println(oValue) //60
 
 	fmt.Println("调用对象的方法")
 	mValue := opValue.MethodByName("SetName")

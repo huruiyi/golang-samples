@@ -98,13 +98,13 @@ func main() {
 				animal.GoDie()
 			}
 
-/*			if human, ok := animal.(*Human); ok {
-				human.Hunt()
-			} else if tiger, ok := animal.(*Tiger); ok {
-				tiger.Run()
-			} else {
-				animal.GoDie()
-			}*/
+			/*			if human, ok := animal.(*Human); ok {
+							human.Hunt()
+						} else if tiger, ok := animal.(*Tiger); ok {
+							tiger.Run()
+						} else {
+							animal.GoDie()
+						}*/
 
 		}
 	}

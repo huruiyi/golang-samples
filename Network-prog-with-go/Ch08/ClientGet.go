@@ -34,11 +34,11 @@ func main() {
 		fmt.Println(response.Status)
 		os.Exit(2)
 	}
-	
+
 	fmt.Println("The response header is")
 	b, _ := httputil.DumpResponse(response, false)
 	fmt.Print(string(b))
-	
+
 	chSet := getCharset(response)
 	if chSet != "utf-8" {
 		fmt.Println("Cannot handle", chSet)

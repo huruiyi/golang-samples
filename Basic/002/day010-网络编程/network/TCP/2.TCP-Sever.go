@@ -9,7 +9,7 @@ func dealwithconnection(connect net.Conn) {
 	fmt.Println("TCP服务器开始处理请求")
 	buffer := make([]byte, 100)
 	n, err := connect.Read(buffer) //收到消息
-	if (err == nil) {
+	if err == nil {
 		fmt.Println("读取字节数:", n)
 		fmt.Println("----------------------------读取的信息(来自客户端的消息)----------------------------")
 		fmt.Println("[", string(buffer), "]")
@@ -17,7 +17,7 @@ func dealwithconnection(connect net.Conn) {
 		fmt.Println("----------------------------读取的信息----------------------------")
 	}
 
-	connect.Write([]byte ("收到消息-来自服务器"))
+	connect.Write([]byte("收到消息-来自服务器"))
 }
 
 func main() {

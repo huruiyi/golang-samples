@@ -17,7 +17,7 @@ func dealwithconnection(connect net.Conn) {
 	fmt.Printf("output:%s\n", buf)
 	fmt.Printf("error:%s\n", err)
 
-	connect.Write([]byte (buf))
+	connect.Write([]byte(buf))
 	fmt.Println("TCP服务器处理完请求")
 
 }
@@ -54,7 +54,7 @@ func main() {
 				fmt.Printf("output:%s\n", buf)
 				fmt.Printf("error:%s\n", err)
 
-				connect.Write([]byte (buf))
+				connect.Write([]byte(buf))
 				fmt.Println("TCP服务器处理完请求")
 			}
 

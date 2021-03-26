@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"log"
+	"net/http"
 )
 
 func indexHandler(writer http.ResponseWriter, request *http.Request) {
 	// Write the contents of the response body to the writer interface
 	// Request object contains information about and from the client
-	fmt.Fprintf(writer, "You requested: " + request.URL.Path)
+	fmt.Fprintf(writer, "You requested: "+request.URL.Path)
 }
 
 func main() {

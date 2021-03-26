@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
-	"os"
 	"io/ioutil"
+	"net/http"
+	"os"
 	"strings"
 )
 
@@ -16,7 +16,7 @@ import (
 
 func mainGet() {
 	resp, err := http.Get("http://www.baidu.com/s?wd=去浪")
-	ClientHandleError(err,"http.Get")
+	ClientHandleError(err, "http.Get")
 	defer resp.Body.Close()
 
 	bytes, _ := ioutil.ReadAll(resp.Body)
@@ -29,7 +29,7 @@ func main() {
 		"application/x-www-form-urlencoded",
 		strings.NewReader("姓名=接客&师承=约汉&心愿=男人脑壳全坏掉"))
 
-	ClientHandleError(err,"http.Get")
+	ClientHandleError(err, "http.Get")
 	defer resp.Body.Close()
 
 	bytes, _ := ioutil.ReadAll(resp.Body)

@@ -1,10 +1,10 @@
 package controllers
 
 import (
+	"../model"
 	"encoding/json"
 	"log"
 	"net/http"
-	"../model"
 )
 
 // GetUsers serves requests for Http Get to "/users"

@@ -1,10 +1,10 @@
 package routers
 
 import (
-	"github.com/codegangsta/negroni"
-	"github.com/gorilla/mux"
 	"../../taskmanager/common"
 	"../../taskmanager/controllers"
+	"github.com/codegangsta/negroni"
+	"github.com/gorilla/mux"
 )
 
 func SetTaskRoutes(router *mux.Router) *mux.Router {

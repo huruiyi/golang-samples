@@ -5,9 +5,9 @@
 package main
 
 import (
-	"net/rpc"
 	"fmt"
 	"log"
+	"net/rpc"
 	"os"
 )
 

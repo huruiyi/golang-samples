@@ -4,12 +4,12 @@
 package main
 
 import (
+	"crypto/tls"
 	"fmt"
 	"net/http"
 	"net/url"
 	"os"
 	"strings"
-	"crypto/tls"
 )
 
 func main() {

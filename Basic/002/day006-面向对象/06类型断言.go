@@ -39,49 +39,49 @@ type Worker interface {
 type Coder struct {
 	skill string
 }
+
 /*码农指针实现Worker接口*/
-func (c *Coder)Work(hour int) (product string){
-	fmt.Printf("码农一天工作%d小时\n",hour)
-	fmt.Printf("码农正在%s\n",c.skill)
+func (c *Coder) Work(hour int) (product string) {
+	fmt.Printf("码农一天工作%d小时\n", hour)
+	fmt.Printf("码农正在%s\n", c.skill)
 	return "BUG"
 }
-func (c *Coder)Rest(){
+func (c *Coder) Rest() {
 	fmt.Println("休息是什么？？")
 }
+
 /*码农特有的方法*/
-func (c *Coder)WorkHome()  {
+func (c *Coder) WorkHome() {
 	fmt.Println("程序员在家工作")
 }
-
-
 
 /*定义产品经理结构体*/
 type ProductManager struct {
 	skill string
 }
+
 /*ProductManager指针实现Worker接口*/
-func (pm *ProductManager)Work(hour int) (product string){
-	fmt.Printf("产品一天工作%d小时\n",hour)
-	fmt.Printf("产品正在%s\n",pm.skill)
+func (pm *ProductManager) Work(hour int) (product string) {
+	fmt.Printf("产品一天工作%d小时\n", hour)
+	fmt.Printf("产品正在%s\n", pm.skill)
 	return "无逻辑的需求"
 }
-func (pm *ProductManager)Rest(){
+func (pm *ProductManager) Rest() {
 	fmt.Println("看程序员撸代码")
 }
-
-
 
 /*定义老板结构体*/
 type Boss struct {
 	skill string
 }
+
 /*Boss指针实现Worker接口*/
-func (b *Boss)Work(hour int) (product string){
-	fmt.Printf("老板一天工作%d小时\n",hour)
-	fmt.Printf("产品正在%s\n",b.skill)
+func (b *Boss) Work(hour int) (product string) {
+	fmt.Printf("老板一天工作%d小时\n", hour)
+	fmt.Printf("产品正在%s\n", b.skill)
 	return "梦想"
 }
-func (c *Boss)Rest(){
+func (c *Boss) Rest() {
 	fmt.Println("一天到晚都在休息")
 }
 
@@ -94,7 +94,7 @@ func main041() {
 	workers = append(workers, &ProductManager{"拍脑门"})
 	workers = append(workers, &Boss{"吹牛逼"})
 
-	for _,worker := range workers{
+	for _, worker := range workers {
 		switch worker.(type) {
 		case *Coder:
 			fmt.Println("伦家是个撸代码滴")
@@ -114,12 +114,12 @@ func main() {
 	workers = append(workers, &ProductManager{"拍脑门"})
 	workers = append(workers, &Coder{"撸代码"})
 
-	for _,worker := range workers{
-		if coder,ok := worker.(*Coder);ok{
-			fmt.Println("发现一只程序猿在",coder.skill)
+	for _, worker := range workers {
+		if coder, ok := worker.(*Coder); ok {
+			fmt.Println("发现一只程序猿在", coder.skill)
 			coder.WorkHome()
-		}else {
-			fmt.Println(worker,"不是程序猿")
+		} else {
+			fmt.Println(worker, "不是程序猿")
 		}
 	}
 

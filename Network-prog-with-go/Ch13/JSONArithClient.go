@@ -4,9 +4,9 @@
 package main
 
 import (
-	"net/rpc/jsonrpc"
 	"fmt"
 	"log"
+	"net/rpc/jsonrpc"
 	"os"
 )
 

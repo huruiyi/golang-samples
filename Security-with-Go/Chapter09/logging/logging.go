@@ -9,7 +9,7 @@ import (
 
 // Return response to client
 func indexHandler(writer http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(writer, "You requested: " + request.URL.Path)
+	fmt.Fprintf(writer, "You requested: "+request.URL.Path)
 }
 
 func main() {

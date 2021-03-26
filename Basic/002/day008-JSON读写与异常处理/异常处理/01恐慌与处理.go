@@ -1,8 +1,8 @@
 package main
 
 import (
-	"math"
 	"fmt"
+	"math"
 )
 
 /*演示几个恐慌：对空指针取值、下标越界、向空map中添加键值对*/
@@ -41,7 +41,7 @@ func main() {
 	defer func() {
 		//处理恐慌
 		//从恐慌中复生，捕获造成恐慌的元凶，进行处理
-		if panicReason := recover();panicReason!=nil{
+		if panicReason := recover(); panicReason != nil {
 			fmt.Println(panicReason)
 			fmt.Println("送钱送房子送美女2")
 		}

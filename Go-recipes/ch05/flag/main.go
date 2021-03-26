@@ -11,7 +11,7 @@ func main() {
 	numbPtr := flag.Int("num", 25, "an int")
 	boolPtr := flag.Bool("enable", false, "a bool")
 	var num int
-	flag.IntVar(&num, "num", 30, "an int")	
+	flag.IntVar(&num, "num", 30, "an int")
 	// Parse parses flag definitions from the argument list.
 	flag.Parse()
 	// Get the values for pointers

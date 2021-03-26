@@ -29,10 +29,10 @@ func main031() {
 func main032() {
 
 	type Person struct {
-		Name string
-		Age int
-		Rmb float64
-		Sex bool
+		Name  string
+		Age   int
+		Rmb   float64
+		Sex   bool
 		Hobby []string
 	}
 

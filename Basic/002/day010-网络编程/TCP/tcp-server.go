@@ -24,14 +24,14 @@ func main() {
 			n, err2 := conn.Read(buffer)
 
 			if err2 == nil {
-			/*	fmt.Println("读取长度：", n, "buffer.len=", len(buffer))
-				if n != len(buffer) {
-					bufferRead := make([]byte, n)
-					copy(bufferRead, buffer)
-					fmt.Println("客户端消息：", string(bufferRead))
-				} else {
-					fmt.Println("客户端消息：", string(buffer))
-				}*/
+				/*	fmt.Println("读取长度：", n, "buffer.len=", len(buffer))
+					if n != len(buffer) {
+						bufferRead := make([]byte, n)
+						copy(bufferRead, buffer)
+						fmt.Println("客户端消息：", string(bufferRead))
+					} else {
+						fmt.Println("客户端消息：", string(buffer))
+					}*/
 				fmt.Println("客户端消息：", string(buffer[:n]))
 				conn.Write([]byte("来自服务器：收到消息"))
 			}

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net"
 	"fmt"
 	"log"
+	"net"
 )
 
 var protocol = "tcp" // tcp or udp

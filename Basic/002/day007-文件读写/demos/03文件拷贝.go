@@ -1,11 +1,11 @@
 package main
 
 import (
-	"io/ioutil"
+	"bufio"
 	"fmt"
 	"io"
+	"io/ioutil"
 	"os"
-	"bufio"
 )
 
 /*

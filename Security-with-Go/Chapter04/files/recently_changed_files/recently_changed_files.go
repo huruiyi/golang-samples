@@ -21,8 +21,7 @@ func insertSorted(fileList *list.List, fileNode FileNode) {
 	}
 
 	for element := fileList.Front(); element != nil; element = element.Next() {
-		if fileNode.Info.ModTime().Before(element.Value.
-			(FileNode).Info.ModTime()) {
+		if fileNode.Info.ModTime().Before(element.Value.(FileNode).Info.ModTime()) {
 			fileList.InsertBefore(fileNode, element)
 			return
 		}

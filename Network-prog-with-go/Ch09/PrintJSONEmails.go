@@ -5,9 +5,9 @@
 package main
 
 import (
-	"text/template"
-	"os"
 	"fmt"
+	"os"
+	"text/template"
 )
 
 type Person struct {

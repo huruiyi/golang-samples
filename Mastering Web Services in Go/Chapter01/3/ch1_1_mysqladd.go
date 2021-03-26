@@ -21,7 +21,6 @@ type User struct {
 }
 
 func CreateUser(w http.ResponseWriter, r *http.Request) {
-
 	NewUser := User{}
 	NewUser.Name = r.FormValue("user")
 	NewUser.Email = r.FormValue("email")
@@ -58,8 +57,26 @@ func GetUser(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, string(output))
 	}
 }
+
+const (
+	USERNAME = "test"
+	PASSWORD = "test"
+	NETWORK  = "tcp"
+	SERVER   = "localhost"
+	PORT     = 3306
+	DATABASE = "blog"
+)
+
 func main() {
-	db, err := sql.Open("mysql", "root@/social_network")
+
+	//http://localhost:8080/api/user/create?user=u1&email=abc@qq.com&first=fn&last=ln
+	//http://localhost:8080/api/user/read/1
+
+	//"test:test@tcp(localhost:3306)/blog"
+	dsn := fmt.Sprintf("%s:%s@%s(%s:%d)/%s", USERNAME, PASSWORD, NETWORK, SERVER, PORT, DATABASE)
+	fmt.Println(dsn)
+
+	db, err := sql.Open("mysql", dsn)
 	if err != nil {
 
 	}

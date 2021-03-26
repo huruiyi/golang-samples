@@ -3,8 +3,8 @@ package main
 import (
 	"crypto/rand"
 	"crypto/rsa"
-	"crypto/x509/pkix"
 	"crypto/x509"
+	"crypto/x509/pkix"
 	"encoding/pem"
 	"fmt"
 	"io/ioutil"
@@ -58,33 +58,33 @@ func setupCertificateTemplate(isCA bool) x509.Certificate {
 	}
 
 	nameInfo := pkix.Name{
-		Organization: []string{"My Organization"},
-		CommonName: "localhost",
+		Organization:       []string{"My Organization"},
+		CommonName:         "localhost",
 		OrganizationalUnit: []string{"My Business Unit"},
-		Country:            []string{"US"}, // 2-character ISO code
-		Province:           []string{"Texas"}, // State
+		Country:            []string{"US"},      // 2-character ISO code
+		Province:           []string{"Texas"},   // State
 		Locality:           []string{"Houston"}, // City
 	}
 
 	// Create the certificate template
 	certTemplate := x509.Certificate{
-		SerialNumber: randomNumber,
-		Subject: nameInfo,
+		SerialNumber:   randomNumber,
+		Subject:        nameInfo,
 		EmailAddresses: []string{"test@localhost"},
-		NotBefore: notBefore,
-		NotAfter: notAfter,
-		KeyUsage: x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,
+		NotBefore:      notBefore,
+		NotAfter:       notAfter,
+		KeyUsage:       x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,
 		// For ExtKeyUsage, default to any, but can specify to use
 		// only as server or client authentication, code signing, etc
-		ExtKeyUsage: []x509.ExtKeyUsage{x509.ExtKeyUsageAny },
+		ExtKeyUsage:           []x509.ExtKeyUsage{x509.ExtKeyUsageAny},
 		BasicConstraintsValid: true,
-		IsCA: false,
+		IsCA:                  false,
 	}
 
 	// To create a certificate authority that can sign cert signing requests, set these
 	if isCA {
-	    certTemplate.IsCA = true
-	    certTemplate.KeyUsage = certTemplate.KeyUsage | x509.KeyUsageCertSign
+		certTemplate.IsCA = true
+		certTemplate.KeyUsage = certTemplate.KeyUsage | x509.KeyUsageCertSign
 	}
 
 	// Add any IP addresses and hostnames covered by this cert
@@ -119,7 +119,7 @@ func loadPrivateKeyFromPemFile(privateKeyFilename string) *rsa.PrivateKey {
 }
 
 // Save the certificate as a PEM encoded file
-func writeCertToPemFile(outputFilename string, derBytes []byte ) {
+func writeCertToPemFile(outputFilename string, derBytes []byte) {
 	// Create a PEM from the certificate
 	certPem := &pem.Block{Type: "CERTIFICATE", Bytes: derBytes}
 
@@ -161,4 +161,3 @@ func main() {
 	// Format the certificate as a PEM and write to file
 	writeCertToPemFile(certOutputFilename, certificate)
 }
-

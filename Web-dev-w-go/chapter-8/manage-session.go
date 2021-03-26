@@ -82,14 +82,15 @@ func GetCategories(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write(j)
 }
-/**
-	application/json
 
-	{
-		"Name":"哈哈",
-		"Description":"Could not get any response"
-	}
- */
+/**
+application/json
+
+{
+	"Name":"哈哈",
+	"Description":"Could not get any response"
+}
+*/
 func main() {
 	var err error
 	session, err = mgo.Dial("localhost")

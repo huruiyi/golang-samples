@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"os"
-	"net"
 	"bufio"
+	"fmt"
+	"net"
+	"os"
 )
 
 /*
@@ -14,18 +14,18 @@ import (
 */
 func main() {
 	conn, e := net.Dial("udp", "127.0.0.1:8888")
-	ClientHandleError(e,"net.Dial")
+	ClientHandleError(e, "net.Dial")
 
 	reader := bufio.NewReader(os.Stdin)
 	buffer := make([]byte, 1024)
 	for {
-		lineBytes, _, _:= reader.ReadLine()
+		lineBytes, _, _ := reader.ReadLine()
 		conn.Write(lineBytes)
 		n, _ := conn.Read(buffer)
 		serverMsg := string(buffer[:n])
-		fmt.Println("服务端：",serverMsg)
+		fmt.Println("服务端：", serverMsg)
 
-		if serverMsg == "fuckoff"{
+		if serverMsg == "fuckoff" {
 			//发出杀猪般的哀鸣
 			conn.Write([]byte("呜呼狡兔死走狗烹飞鸟尽良弓藏，吾去也！"))
 			break

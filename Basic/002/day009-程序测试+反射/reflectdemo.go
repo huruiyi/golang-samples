@@ -7,7 +7,7 @@ import (
 type Person struct {
 	Name   string
 	Age    int
-	Hobby  [] string
+	Hobby  []string
 	IsMale bool
 }
 

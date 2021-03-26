@@ -50,7 +50,7 @@ func init() {
 func index(w http.ResponseWriter, r *http.Request) {
 	q := datastore.NewQuery("tasks").
 		Order("-CreatedOn")
-	c := appengine.NewContext(r)	
+	c := appengine.NewContext(r)
 	var tasks []Task
 	_, err := q.GetAll(c, &tasks)
 	if err != nil {

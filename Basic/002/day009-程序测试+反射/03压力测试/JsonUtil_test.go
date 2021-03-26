@@ -10,7 +10,7 @@ func BenchmarkEncodePerson2JsonFile(b *testing.B) {
 	//汇报内存分配情况
 	b.ReportAllocs()
 	for i := 0; i < b.N; i++ {
-		EncodePerson2JsonFile(&p0,filename)
+		EncodePerson2JsonFile(&p0, filename)
 	}
 }
 

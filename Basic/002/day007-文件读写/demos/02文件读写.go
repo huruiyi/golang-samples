@@ -1,12 +1,12 @@
 package main
 
 import (
-	"os"
-	"fmt"
-	"time"
 	"bufio"
+	"fmt"
 	"io"
 	"io/ioutil"
+	"os"
+	"time"
 )
 
 /*
@@ -50,10 +50,10 @@ func main022() {
 	file, err := os.OpenFile("C:/Tencent1803/W2/day007文件读写/files/一些逼嗑.txt", os.O_RDONLY, 0)
 
 	//判断文件打开是否成功
-	if err!=nil{
-		fmt.Println("文件打开失败，err=",err)
+	if err != nil {
+		fmt.Println("文件打开失败，err=", err)
 		return
-	}else{
+	} else {
 		fmt.Println("文件打开成功")
 	}
 
@@ -67,22 +67,22 @@ func main022() {
 	reader := bufio.NewReader(file)
 
 	//循环读取
-	for{
+	for {
 		//每次读取到下一处换行符的位置，返回包含换行符在内的字符串
 		str, err := reader.ReadString('\n')
 
-		if err == nil{
+		if err == nil {
 			//输出读取到缓冲区中的内容
 			fmt.Println(str)
-		}else{
+		} else {
 
 			//读到文件末尾时退出循环
-			if err == io.EOF{
+			if err == io.EOF {
 				fmt.Println("已到文件末尾")
 				break
-			}else{
+			} else {
 				//打印错误并退出
-				fmt.Println("读取失败，err=",err)
+				fmt.Println("读取失败，err=", err)
 				return
 			}
 		}
@@ -90,7 +90,6 @@ func main022() {
 	fmt.Println("文件读取完毕!")
 
 }
-
 
 /*字符串和字节切片的互化*/
 func main023() {
@@ -102,10 +101,10 @@ func main023() {
 /*使用ioutil包对《一些逼嗑》进行简易读取*/
 func main024() {
 	bytes, e := ioutil.ReadFile("C:/Tencent1803/W2/day007文件读写/files/一些逼嗑.txt")
-	if e == nil{
-		fmt.Println("读取成功，内容=",string(bytes))
-	}else{
-		fmt.Println("读取失败，err=",e)
+	if e == nil {
+		fmt.Println("读取成功，内容=", string(bytes))
+	} else {
+		fmt.Println("读取失败，err=", e)
 	}
 }
 
@@ -114,8 +113,8 @@ func main025() {
 
 	//打开指定文件，模式：不存在就创建+只写+覆盖，新创建的文件对所有人可读可写
 	file, err := os.OpenFile("C:/Tencent1803/W2/day007文件读写/files/二些逼嗑.txt", os.O_CREATE|os.O_WRONLY|os.O_TRUNC, 0666)
-	if err !=nil{
-		fmt.Println("文件打开失败，err=",err)
+	if err != nil {
+		fmt.Println("文件打开失败，err=", err)
 		return
 	}
 
@@ -140,7 +139,7 @@ func main025() {
 	//写出一个字符
 	writer.WriteRune('浪')
 	//写出一堆字节
-	writer.Write([]byte{124,125,126})
+	writer.Write([]byte{124, 125, 126})
 
 	//强制将缓冲区中的内容写出到文件
 	writer.Flush()
@@ -155,9 +154,9 @@ func main026() {
 			普通家庭马化腾
 `
 	err := ioutil.WriteFile("C:/Tencent1803/W2/day007文件读写/files/三些逼嗑.txt", []byte(dataStr), 0666)
-	if err != nil{
-		fmt.Println("写出失败，err=",err)
-	}else{
+	if err != nil {
+		fmt.Println("写出失败，err=", err)
+	} else {
 		fmt.Println("写出成功！")
 	}
 }
@@ -165,16 +164,13 @@ func main026() {
 /*使用os包的状态检测结合os.IsNotExist(err)判断文件是否存在*/
 func main027() {
 	_, e := os.Stat("C:/Tencent1803/W2/day007文件读写/files/三些2逼嗑.txt")
-	if e == nil{
+	if e == nil {
 		fmt.Println("文件存在！")
-	}else{
-		if os.IsNotExist(e){
+	} else {
+		if os.IsNotExist(e) {
 			fmt.Println("文件不存在")
-		}else{
-			fmt.Println("发生其他错误，err=",e)
+		} else {
+			fmt.Println("发生其他错误，err=", e)
 		}
 	}
 }
-
-
-

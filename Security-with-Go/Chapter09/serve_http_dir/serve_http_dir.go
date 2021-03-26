@@ -1,10 +1,10 @@
 package main
 
 import (
-"fmt"
-"log"
-"net/http"
-"os"
+	"fmt"
+	"log"
+	"net/http"
+	"os"
 )
 
 func printUsage() {
@@ -36,4 +36,3 @@ func main() {
 		log.Fatal("Error running server. ", err)
 	}
 }
-

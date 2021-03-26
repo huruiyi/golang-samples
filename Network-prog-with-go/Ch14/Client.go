@@ -19,18 +19,18 @@ const flashcard_xml string = "application/x.flashcards+xml"
 const flashcard_json string = "application/x.flashcards+json"
 
 type FlashcardSets struct {
-	XMLName string `xml:"cardsets"`
-	CardSet    []CardSet `xml:"cardset"`
+	XMLName string    `xml:"cardsets"`
+	CardSet []CardSet `xml:"cardset"`
 }
 
 type CardSet struct {
 	XMLName string `xml:"cardset"`
-	Name string `xml:"name"`
-	Link string `xml:"href,attr"`
-	Cards []Card `xml:"card"`
+	Name    string `xml:"name"`
+	Link    string `xml:"href,attr"`
+	Cards   []Card `xml:"card"`
 }
 
-type Card  struct {
+type Card struct {
 	Name string `xml:"name"`
 	Link string `xml:"href,attr"`
 }
@@ -99,7 +99,7 @@ func getOneFlashcardSet(url *url.URL, client *http.Client) CardSet {
 		checkError(err)
 		fmt.Println("JSON: ", sets)
 	}
-        */
+	*/
 	return sets
 }
 
@@ -183,7 +183,7 @@ func main() {
 	// Step 4: get the contents of one flashcard
 	//         be lazy, just get as text/plain and
 	//         don't do anything with it
-	card_url, _ :=  url.Parse(os.Args[1] + oneFlashcardSet.Cards[0].Link)
+	card_url, _ := url.Parse(os.Args[1] + oneFlashcardSet.Cards[0].Link)
 	fmt.Println("Asking for URL: ", card_url.String())
 	oneFlashcard := getOneFlashcard(card_url, client)
 	fmt.Println("Step 4", oneFlashcard)

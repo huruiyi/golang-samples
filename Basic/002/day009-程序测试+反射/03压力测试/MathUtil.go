@@ -8,8 +8,8 @@ func GetSum(n int) int {
 	return sum + 1
 }
 
-func GetSumRecursively(n int)int  {
-	if n == 1{
+func GetSumRecursively(n int) int {
+	if n == 1 {
 		return 1
 	}
 	return n + GetSumRecursively(n-1)

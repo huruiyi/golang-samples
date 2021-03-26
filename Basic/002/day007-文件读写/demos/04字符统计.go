@@ -17,15 +17,15 @@ func main() {
 	bytes, _ := ioutil.ReadFile("C:/Tencent1803/W2/day007文件读写/files/temp.txt")
 	contentStr := string(bytes)
 
-	var numCount, letterCount,spaceCount,otherCount int
+	var numCount, letterCount, spaceCount, otherCount int
 	for _, c := range contentStr {
 		if c >= '0' && c <= '9' {
-			numCount ++
+			numCount++
 		} else if (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') {
-			letterCount ++
+			letterCount++
 		} else if c == ' ' || c == '\t' || c == '\r' || c == '\n' {
 			spaceCount++
-		}else{
+		} else {
 			otherCount++
 		}
 	}

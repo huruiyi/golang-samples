@@ -10,7 +10,6 @@ func main() {
 	fmt.Println("****** Default favorite packages ******\n")
 	fav.PrintFavorites()
 
-
 	// Add couple of favorites
 	fav.Add("github.com/dgrijalva/jwt-go")
 	fav.Add("github.com/onsi/ginkgo")

@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	// deliver files from the directory /var/www 
+	// deliver files from the directory /var/www
 	fileServer := http.FileServer(http.Dir("/var/www"))
 
 	// register the handler and deliver requests to it

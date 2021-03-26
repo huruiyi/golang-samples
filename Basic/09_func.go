@@ -126,22 +126,20 @@ func main() {
 	func2("小明", "小红")
 	println("*********************************")
 
-
 	println("*********************************")
 	var revalue0 int = func3(25)
-	fmt.Println("func3: ",revalue0)
+	fmt.Println("func3: ", revalue0)
 	revalue1 := func3(100)
-	fmt.Println("func3: ",revalue1)
+	fmt.Println("func3: ", revalue1)
 	println("*********************************")
 
-
 	var a, b int = func4(234)
-	fmt.Println("func4: ",a, b)
+	fmt.Println("func4: ", a, b)
 
 	num1 := 21
 	num2 := 3
 	var c = func5(num1, num2)
-	fmt.Println("func5: ",c)
+	fmt.Println("func5: ", c)
 
 	s1, s2 := func6(num1, num2)
 	println("func6: 输出: ", s1, s2)

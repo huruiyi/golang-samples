@@ -41,8 +41,8 @@ func main() {
 		KeyUsage:     x509.KeyUsageCertSign | x509.KeyUsageKeyEncipherment | x509.KeyUsageDigitalSignature,
 
 		BasicConstraintsValid: true,
-		IsCA:     true,
-		DNSNames: []string{"jan.newmarch.name", "localhost"},
+		IsCA:                  true,
+		DNSNames:              []string{"jan.newmarch.name", "localhost"},
 	}
 	derBytes, err := x509.CreateCertificate(random, &template,
 		&template, &key.PublicKey, &key)

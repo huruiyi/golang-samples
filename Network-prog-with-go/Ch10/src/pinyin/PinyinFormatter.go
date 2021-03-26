@@ -71,13 +71,13 @@ var (
 
 func addAccent(word string, tone int) string {
 	/*
-	 * Based on "Where do the tone marks go?"
-	 * at http://www.pinyin.info/rules/where.html:
-         *
-         *    A and e trump all other vowels and always take the tone mark.
-         *    In the combination ou, o takes the mark.
-         *    In all other cases, the final vowel takes the mark.
-	 */
+		 * Based on "Where do the tone marks go?"
+		 * at http://www.pinyin.info/rules/where.html:
+	         *
+	         *    A and e trump all other vowels and always take the tone mark.
+	         *    In the combination ou, o takes the mark.
+	         *    In all other cases, the final vowel takes the mark.
+	*/
 
 	n := strings.Index(word, "a")
 	if n != -1 {

@@ -1,15 +1,15 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
-	"gopkg.in/yaml.v2"
 	"net/http"
 )
 
 type User struct {
-	Name string
-	Email string
-	ID int
+	Name  string `json:"name"`
+	Email string `json:"email"`
+	ID    int    `json:"int"`
 }
 
 func userRouter(w http.ResponseWriter, r *http.Request) {
@@ -18,14 +18,14 @@ func userRouter(w http.ResponseWriter, r *http.Request) {
 	ourUser.Email = "bill.smith@example.com"
 	ourUser.ID = 100
 
-	output,_ := yaml.Marshal(&ourUser)
+	output, _ := json.Marshal(&ourUser)
 	fmt.Fprintln(w, string(output))
 }
 
 func main() {
-	
-	fmt.Println("Starting YAML server")
+	//http://localhost:8080/user
+	fmt.Println("Starting JSON server")
 	http.HandleFunc("/user", userRouter)
-	http.ListenAndServe(":8090",nil)
+	http.ListenAndServe(":8080", nil)
 
 }

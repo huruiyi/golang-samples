@@ -1,9 +1,8 @@
 package main
 
-import
-(
-	"nathankozyra.com/httpex"
+import (
 	"fmt"
+	"nathankozyra.com/httpex"
 )
 
 func main() {

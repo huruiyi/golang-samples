@@ -1,10 +1,10 @@
 package main
 
 import (
-	"log"
-	"net/http"
 	"../bookmarkapi/common"
 	"../bookmarkapi/routers"
+	"log"
+	"net/http"
 )
 
 // Entry point of the program

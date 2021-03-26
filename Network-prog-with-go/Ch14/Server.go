@@ -82,10 +82,9 @@ func main() {
 		cardset_url := `/flashcardSets/` + url.QueryEscape(file.Name())
 		fmt.Println("Adding handlers for ", cardset_url)
 		http.HandleFunc(cardset_url, handleOneFlashCardSet)
-		http.HandleFunc(cardset_url + `/`, handleOneFlashCard)
+		http.HandleFunc(cardset_url+`/`, handleOneFlashCard)
 	}
-	
-	
+
 	// deliver requests to the handlers
 	err = http.ListenAndServe(port, nil)
 	checkError(err)
@@ -148,7 +147,7 @@ func handleFlashCardSets(rw http.ResponseWriter, req *http.Request) {
 			rw.WriteHeader(http.StatusNotAcceptable)
 			return
 		}
-		
+
 		files, err := ioutil.ReadDir(`flashcardSets`)
 		checkError(err)
 		numfiles := len(files)

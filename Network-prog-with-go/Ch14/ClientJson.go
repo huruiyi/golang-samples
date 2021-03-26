@@ -19,29 +19,28 @@ const flashcard_xml string = "application/x.flashcards+xml"
 const flashcard_json string = "application/x.flashcards+json"
 
 type FlashcardSets struct {
-        XMLName string `xml:"cardsets"`
-        CardSet    []CardSet `xml:"cardset"`
+	XMLName string    `xml:"cardsets"`
+	CardSet []CardSet `xml:"cardset"`
 }
 
 type CardSet struct {
-        XMLName string `xml:"cardset"`
-        Name string `xml:"name"`
-        Link string `xml:"href,attr"`
-        Cards []Card `xml:"card"`
+	XMLName string `xml:"cardset"`
+	Name    string `xml:"name"`
+	Link    string `xml:"href,attr"`
+	Cards   []Card `xml:"card"`
 }
 
-type Card  struct {
-        Name string `xml:"name"`
-        Link string `xml:"href,attr"`
+type Card struct {
+	Name string `xml:"name"`
+	Link string `xml:"href,attr"`
 }
-
 
 type FlashcardSetsJson struct {
 	CardSet []CardSetJson `json:"cardsets"`
 }
 type CardSetJson struct {
-	Name string `json:"name"`
-	Link string `json:"@id"`
+	Name  string     `json:"name"`
+	Link  string     `json:"@id"`
 	Cards []CardJson `json:"cardset,omitempty"`
 }
 type CardJson struct {
@@ -105,7 +104,7 @@ func getOneFlashcardSet(url *url.URL, client *http.Client) CardSetJson {
 		checkError(err)
 		fmt.Println("JSON: ", sets)
 	}
-       
+
 	return sets
 }
 
@@ -161,10 +160,9 @@ func main() {
 	//flashcardSets.CardSet[0].Cards = []CardJson{CardJson{Name: `n`, Link: `l`}}
 	bytes, _ := json.Marshal(flashcardSets)
 	fmt.Println(string(bytes[:]))
-		
+
 	url = url
 	client = client
-
 
 	// Step 1: get a list of flashcard sets
 	flashcardSets = getFlashcardSets(url, client)
@@ -179,11 +177,11 @@ func main() {
 	// Step 3: get the contents of one flashcard
 	//         be lazy, just get as text/plain and
 	//         don't do anything with it
-	card_url, _ :=  url.Parse(os.Args[1] + oneFlashcardSet.Cards[0].Link)
+	card_url, _ := url.Parse(os.Args[1] + oneFlashcardSet.Cards[0].Link)
 	fmt.Println("Asking for URL: ", card_url.String())
 	oneFlashcard := getOneFlashcard(card_url, client)
 	fmt.Println("Step 3", oneFlashcard)
-	
+
 	os.Exit(0)
 }
 

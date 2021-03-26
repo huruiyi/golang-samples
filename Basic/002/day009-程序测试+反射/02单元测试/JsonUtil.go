@@ -2,9 +2,9 @@ package mylib
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"os"
-	"errors"
 )
 
 type Person struct {
@@ -30,7 +30,7 @@ func EncodePerson2JsonFile(p *Person, filename string) bool {
 	}
 }
 
-func DecodeJsonFile2Person(filename string) (*Person,error) {
+func DecodeJsonFile2Person(filename string) (*Person, error) {
 	srcFile, _ := os.Open(filename)
 	defer srcFile.Close()
 
@@ -39,9 +39,9 @@ func DecodeJsonFile2Person(filename string) (*Person,error) {
 	err := decoder.Decode(personPtr)
 	if err != nil {
 		fmt.Println("解码失败，err=", err)
-		return nil,errors.New("解码失败")
+		return nil, errors.New("解码失败")
 	} else {
 		fmt.Println("解码成功！", *personPtr)
-		return personPtr,nil
+		return personPtr, nil
 	}
 }

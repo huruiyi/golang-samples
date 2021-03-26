@@ -4,9 +4,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/codegangsta/negroni"
 	"../taskmanager/common"
 	"../taskmanager/routers"
+	"github.com/codegangsta/negroni"
 )
 
 //Entry point of the program

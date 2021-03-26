@@ -58,8 +58,8 @@ func checkArgs() (string, string, int) {
 // PEM is a base-64 encoding of the key
 func getPrivatePemFromKey(privateKey *rsa.PrivateKey) *pem.Block {
 	encodedPrivateKey := x509.MarshalPKCS1PrivateKey(privateKey)
-	var privatePem = &pem.Block {
-		Type: "RSA PRIVATE KEY",
+	var privatePem = &pem.Block{
+		Type:  "RSA PRIVATE KEY",
 		Bytes: encodedPrivateKey,
 	}
 	return privatePem
@@ -87,7 +87,6 @@ func savePemToFile(pemBlock *pem.Block, filename string) {
 		log.Fatal("Error opening pubkey output file. ", err)
 	}
 	defer publicPemOutputFile.Close()
-
 
 	err = pem.Encode(publicPemOutputFile, pemBlock)
 	if err != nil {

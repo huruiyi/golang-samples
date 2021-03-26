@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net"
 	"fmt"
+	"net"
 	"os"
 )
 
@@ -33,9 +33,9 @@ func main() {
 		fmt.Printf("收到来自%v的消息：%s\n", remoteAddr, clientMsg)
 
 		//回复该数据包的客户端
-		if clientMsg != "im off"{
+		if clientMsg != "im off" {
 			udpConn.WriteToUDP([]byte("已阅："+clientMsg), remoteAddr)
-		}else{
+		} else {
 			udpConn.WriteToUDP([]byte("fuckoff"), remoteAddr)
 		}
 	}

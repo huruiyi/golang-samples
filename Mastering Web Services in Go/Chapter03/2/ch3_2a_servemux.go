@@ -13,8 +13,8 @@ func main() {
 		path := r.URL.Path
 		message := "You have triggered nothing"
 
-		testMatch, _ := regexp.MatchString("/testing[0-9]{3}", path);
-		if (testMatch == true) {
+		testMatch, _ := regexp.MatchString("/testing[0-9]{3}", path)
+		if testMatch == true {
 			message = "You hit the test!"
 		}
 

@@ -1,12 +1,12 @@
 package main
 
 import (
+	"github.com/gorilla/mux"
 	"html/template"
 	"log"
 	"net/http"
 	"strconv"
 	"time"
-	"github.com/gorilla/mux"
 )
 
 type Note struct {

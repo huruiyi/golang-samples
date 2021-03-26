@@ -118,6 +118,7 @@ func weatherRouter(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 
+	//https://openweathermap.org/api
 	fmt.Println("Starting API server")
 	http.HandleFunc("/weather", weatherRouter)
 	http.ListenAndServe(":8080", nil)

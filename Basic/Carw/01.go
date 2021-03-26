@@ -106,7 +106,7 @@ func main() {
 func crawMusic(song []fmSong, sinfo *Sinfo) {
 	sinfo.totalCot = sinfo.totalCot + len(song)
 	for _, v := range song {
-		if !FileExist(dir + v.Title + ".mp3") && v.Url != "" {
+		if !FileExist(dir+v.Title+".mp3") && v.Url != "" {
 			log.Println(v.Url + " " + v.Title + "  " + strconv.FormatInt(v.Length, 10))
 			downMusic(v, sinfo)
 		}

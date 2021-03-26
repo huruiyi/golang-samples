@@ -2,8 +2,8 @@ package flashcards
 
 import (
 	"dictionary"
-	"fmt"
 	"encoding/json"
+	"fmt"
 	"os"
 	"sort"
 )
@@ -20,7 +20,6 @@ type FlashCards struct {
 	ShowHalf  string
 	Cards     []*FlashCard
 }
-
 
 func LoadJSON(fileName string, key interface{}) {
 	inFile, err := os.Open(fileName)

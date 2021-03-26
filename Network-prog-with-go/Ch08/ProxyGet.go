@@ -21,7 +21,7 @@ func main() {
 	proxyURL, err := url.Parse(proxyString)
 	checkError(err)
 	rawURL := os.Args[2]
-	url,err := url.Parse(rawURL)
+	url, err := url.Parse(rawURL)
 	checkError(err)
 
 	transport := &http.Transport{Proxy: http.ProxyURL(proxyURL)}

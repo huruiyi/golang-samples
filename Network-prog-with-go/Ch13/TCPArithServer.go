@@ -5,10 +5,10 @@
 package main
 
 import (
-	"fmt"
-	"net/rpc"
 	"errors"
+	"fmt"
 	"net"
+	"net/rpc"
 	"os"
 )
 

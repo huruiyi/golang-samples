@@ -4,19 +4,20 @@ import "fmt"
 
 type person struct {
 	//封装结构体的属性
-	name string
-	age int
-	sex bool
+	name  string
+	age   int
+	sex   bool
 	hobby []string
 }
-func (p *person)Eat()  {
-	fmt.Printf("%s爱饕餮\n",p.name)
+
+func (p *person) Eat() {
+	fmt.Printf("%s爱饕餮\n", p.name)
 }
-func (p *person)Drink()  {
-	fmt.Printf("%s爱喝酒\n",p.name)
+func (p *person) Drink() {
+	fmt.Printf("%s爱喝酒\n", p.name)
 }
-func (p *person)Love()  {
-	fmt.Printf("%s是有感情的\n",p.name)
+func (p *person) Love() {
+	fmt.Printf("%s是有感情的\n", p.name)
 	p.age -= 1
 }
 
@@ -29,8 +30,8 @@ type coder struct {
 	langs []string
 }
 
-func (c *coder)Code()  {
-	fmt.Printf("%s会%v，它正在堆代码",c.name,c.langs)
+func (c *coder) Code() {
+	fmt.Printf("%s会%v，它正在堆代码", c.name, c.langs)
 }
 
 type driver struct {
@@ -43,25 +44,24 @@ type driver struct {
 }
 
 /*司机的特有方法*/
-func (d *driver)drive()  {
-	fmt.Printf("%s一言不合就发车\n",d.name)
+func (d *driver) drive() {
+	fmt.Printf("%s一言不合就发车\n", d.name)
 }
 
 /*覆写父类方法*/
-func (d *driver)Drink()  {
-	if !d.isDriving{
-		fmt.Printf("%s爱喝酒\n",d.name)
-	}else {
+func (d *driver) Drink() {
+	if !d.isDriving {
+		fmt.Printf("%s爱喝酒\n", d.name)
+	} else {
 		fmt.Println("fuckoff，司机一滴酒亲人两行泪")
 	}
 }
-
 
 //子类默认拥有父类的全部属性和方法
 func main021() {
 	c := new(coder)
 	c.name = "西门阿明"
-	c.langs = []string{"Go","汉语","安徽话"}
+	c.langs = []string{"Go", "汉语", "安徽话"}
 	c.Drink()
 	c.Code()
 }

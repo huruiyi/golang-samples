@@ -39,7 +39,7 @@ The age is {{.Age}}.
 func main() {
 	job1 := Job{Employer: "<script>alert('Could be nasty!')</script>", Role: "Director, Commerce and ICT"}
 	job2 := Job{Employer: "Canberra University", Role: "Adjunct Professor"}
-	
+
 	person := Person{
 		Name:   "jan",
 		Age:    66,

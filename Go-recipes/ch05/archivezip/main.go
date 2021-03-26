@@ -54,7 +54,7 @@ func archiveFiles(files []string, archive string) error {
 // readArchive reads the file contents from tar file.
 func readArchive(archive string) error {
 	// Open the zip file specified by name and return a ReadCloser.
-	rc, err := zip.OpenReader(archive)	
+	rc, err := zip.OpenReader(archive)
 	if err != nil {
 		return err
 	}

@@ -66,10 +66,10 @@ func main() {
 	b4 := new(Book)
 	b4.Name = "西游记"
 
-	fmt.Println(b1,b2,b3,b4)
-	fmt.Printf("%v,%v,%v,%v\n",b1,b2,b3,b4)
-	fmt.Printf("%+v,%+v,%+v,%+v\n",b1,b2,b3,b4)
-	fmt.Printf("%#v,%#v,%#v,%#v\n",b1,b2,b3,b4)
+	fmt.Println(b1, b2, b3, b4)
+	fmt.Printf("%v,%v,%v,%v\n", b1, b2, b3, b4)
+	fmt.Printf("%+v,%+v,%+v,%+v\n", b1, b2, b3, b4)
+	fmt.Printf("%#v,%#v,%#v,%#v\n", b1, b2, b3, b4)
 
 	reader1 := Reader{"001", 100}
 	student := Student{reader1, "张全蛋", "质检"}
@@ -78,7 +78,7 @@ func main() {
 	student.BorrowBook(&b2)
 	student.ReturnBook(&b1)
 	student.PayPenalty(5)
-	fmt.Println("学生余额是",student.Balance)
+	fmt.Println("学生余额是", student.Balance)
 
 	teacher := Teacher{Reader{"002", 0}, "王老师", "撩妹秘籍"}
 	teacher.Teach()
@@ -86,5 +86,5 @@ func main() {
 	teacher.BorrowBook(b4)
 	teacher.BorrowBook(&b3)
 	teacher.PayPenalty(500)
-	fmt.Println("老师余额是",teacher.Balance)
+	fmt.Println("老师余额是", teacher.Balance)
 }

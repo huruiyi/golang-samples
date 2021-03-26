@@ -1,15 +1,15 @@
 package controllers_test
 
 import (
-	"encoding/json"
-	"net/http"
-	"net/http/httptest"
-	"strings"
 	"../controllers"
 	"../model"
+	"encoding/json"
 	"github.com/gorilla/mux"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	"net/http"
+	"net/http/httptest"
+	"strings"
 )
 
 var _ = Describe("UserController", func() {

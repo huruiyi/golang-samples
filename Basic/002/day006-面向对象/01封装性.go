@@ -15,7 +15,7 @@ type Person struct {
 - 无论方法的主语定义为值类型还是指针类型，对象值和对象指针都能够正常访问
 - 通常会将主语定义为指针类型——毕竟西门鹤的副本吃了饭，肉不会长到西门鹤本人身上去
 */
-func (p *Person) Eat() () {
+func (p *Person) Eat() {
 	fmt.Printf("%s爱饕餮\n", p.name)
 }
 func (p *Person) Drink() {

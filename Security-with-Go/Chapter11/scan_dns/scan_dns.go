@@ -1,9 +1,9 @@
 package main
 
 import (
-	"strconv"
 	"log"
 	"net"
+	"strconv"
 	"strings"
 )
 
@@ -22,7 +22,7 @@ func main() {
 
 	// Wait for all threads to finish
 	for activeThreads > 0 {
-		<- doneChannel
+		<-doneChannel
 		activeThreads--
 	}
 }

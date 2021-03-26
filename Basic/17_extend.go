@@ -11,9 +11,9 @@ type Human struct {
 	weight int
 }
 type Student struct {
-	Human  // 匿名字段，struct
-	Skills // 匿名字段，自定义的类型string slice
-	int    // 内置类型作为匿名字段
+	Human      // 匿名字段，struct
+	Skills     // 匿名字段，自定义的类型string slice
+	int        // 内置类型作为匿名字段
 	speciality string
 }
 

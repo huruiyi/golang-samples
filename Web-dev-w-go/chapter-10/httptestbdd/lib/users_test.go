@@ -34,7 +34,7 @@ var _ = Describe("Users", func() {
 				Expect(w.Code).To(Equal(200))
 				var users []User
 				json.Unmarshal(w.Body.Bytes(), &users)
-				//Verifying mocked data of 3 users 
+				//Verifying mocked data of 3 users
 				Expect(len(users)).To(Equal(3))
 			})
 		})
