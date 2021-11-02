@@ -70,7 +70,7 @@ func UsersRetrieve(w http.ResponseWriter, r *http.Request) {
 	for rows.Next() {
 
 		user := User{}
-		rows.Scan(&user.ID, &user.Name, &user.First, &user.Last, &user.Email)
+		rows.Scan(&user.ID, &user.Name, &user.Email, &user.First, &user.Last)
 
 		Response.Users = append(Response.Users, user)
 	}
