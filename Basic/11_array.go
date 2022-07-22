@@ -48,9 +48,27 @@ type Note struct {
 	CreatedOn   time.Time `json:"createdon"`
 }
 
-func main() {
+func SortSlice(s []int) {
+	for i := 0; i < len(s)-1; i++ {
+		for j := i + 1; j < len(s); j++ {
+			if s[j] > s[i] {
+				s[i], s[j] = s[j], s[i]
+			}
+		}
+	}
+	fmt.Println(s)
+}
 
-	notes := make(map[string]Note)
+func PrintMatrix() {
+	for j := 0; j < 5; j++ {
+		for i := 0; i < 5; i++ {
+			fmt.Print("大爷\t\t")
+		}
+		fmt.Println()
+	}
+}
+
+func main() {
 
 	var note1 Note
 	note1.Title = "流浪地球"
@@ -62,10 +80,17 @@ func main() {
 	note2.Description = "卧底牢狱 闯牢打虎"
 	note2.CreatedOn = time.Now()
 
+	notes := make(map[string]Note)
 	notes["film1"] = note1
 	notes["film2"] = note2
 
 	fmt.Println(notes)
 
+	PrintMatrix()
+
+	SortSlice([]int{5, 7, 2, 1, 4, 9, 3, 6, 8, 0})
+
+	demo1()
+	demo2()
 	demo3()
 }

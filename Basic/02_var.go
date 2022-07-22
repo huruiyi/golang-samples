@@ -45,7 +45,6 @@ func printVar() {
 	fmt.Println("num:", num)
 	fmt.Println("version:", version)
 	fmt.Println("nickname:", nickname)
-
 }
 
 func DeclareDemo() {
